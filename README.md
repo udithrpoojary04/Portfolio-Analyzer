@@ -4,17 +4,18 @@ DevInsight AI is a production-ready full-stack web application that analyzes a d
 
 ## Tech Stack
 
-- **Backend**: Django 5.1, Django REST Framework, PostgreSQL, JWT Authentication
-- **Frontend**: React (Vite), Tailwind CSS, Chart.js, Lucide Icons, Axios
-- **AI/Async**: OpenAI API (GPT-4o), Celery, Redis
+- **Backend**: Django 5.1, Django REST Framework, PostgreSQL, JWT Authentication, Google OAuth (Allauth)
+- **Frontend**: React 19 (Vite 8), Tailwind CSS 4, Chart.js 4, Lucide Icons, Axios, React Router 7
+- **AI/Async**: Groq API (LLaMA-3.3-70b-versatile), Celery 5.4, Redis
 
 ## Prerequisites
 
 - Python 3.10+
 - Node.js 18+
-- Redis (optional but recommended for background tasks)
-- OpenAI API Key
+- Redis (For Celery background tasks)
+- Groq API Key
 - GitHub Personal Access Token
+- Google OAuth Credentials (for social login)
 
 ## Setup Instructions
 
@@ -37,7 +38,7 @@ pip install -r ../requirements.txt
 # Create .env file from template (at project root)
 cd ..
 cp .env.example .env
-# Edit .env and add your API keys (GITHUB_TOKEN, OPENAI_API_KEY)
+# Edit .env and add your API keys (GITHUB_TOKEN, GROQ_API_KEY)
 
 # Run migrations
 cd backend
@@ -67,9 +68,10 @@ celery -A config worker --loglevel=info
 
 ## Features
 
-- **GitHub Synchronization**: Automatically fetch and store profile and repository metadata.
-- **AI-Powered Analysis**: Deep technical evaluation based on your actual code and impact.
-- **Skill Matrix**: Visual radar chart showing your proficiency across different domains.
+- **Google OAuth Login**: Secure social authentication for developers.
+- **GitHub Synchronization**: Automatically fetch and store profile and repository metadata using GitHub REST API.
+- **AI-Powered Analysis**: Deep technical evaluation powered by LLaMA-3.3 via Groq.
+- **Skill Matrix**: Visual radar chart (Chart.js) showing your proficiency across different domains.
 - **Project Recommendations**: Actionable project ideas to fill identified skill gaps.
 - **Resume Feedback**: Strategic tips for improving your professional presence.
 
