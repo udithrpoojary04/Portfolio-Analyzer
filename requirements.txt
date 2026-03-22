@@ -1,18 +1,18 @@
 # Django Core
 Django==6.0.3
-djangorestframework==3.17.2
+djangorestframework==3.17.0
 django-cors-headers==4.6.0
-django-filter==25.2.1
+django-filter==25.2
 
 # Authentication
 djangorestframework-simplejwt==5.5.1
-django-allauth[socialaccount]==67.2.0
+django-allauth[socialaccount]==65.15.0
 
 # Database (PostgreSQL)
 psycopg[binary]>=3.2.0
 
 # Celery + Redis
-celery==5.5.0
+celery==5.6.2
 django-celery-results==2.6.0
 redis==5.2.1
 
@@ -20,6 +20,7 @@ redis==5.2.1
 requests==2.32.3
 openai
 google-generativeai
+groq
 
 # Utilities
 python-decouple==3.8
