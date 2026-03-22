@@ -1,19 +1,19 @@
 # Django Core
-Django==5.1.4
-djangorestframework==3.15.2
+Django==6.0.3
+djangorestframework==3.17.2
 django-cors-headers==4.6.0
-django-filter==24.3
+django-filter==25.2.1
 
 # Authentication
-djangorestframework-simplejwt==5.4.0
-django-allauth[socialaccount]==66.0.2
+djangorestframework-simplejwt==5.5.1
+django-allauth[socialaccount]==67.2.0
 
 # Database (PostgreSQL)
 psycopg[binary]>=3.2.0
 
 # Celery + Redis
-celery==5.4.0
-django-celery-results==2.5.1
+celery==5.5.0
+django-celery-results==2.6.0
 redis==5.2.1
 
 # API Integrations

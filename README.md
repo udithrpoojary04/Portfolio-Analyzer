@@ -4,13 +4,13 @@ DevInsight AI is a production-ready full-stack web application that analyzes a d
 
 ## Tech Stack
 
-- **Backend**: Django 5.1, Django REST Framework, PostgreSQL, JWT Authentication, Google OAuth (Allauth)
+- **Backend**: Django 6.0, Django REST Framework 3.17, PostgreSQL, JWT Authentication, Google OAuth (Allauth)
 - **Frontend**: React 19 (Vite 8), Tailwind CSS 4, Chart.js 4, Lucide Icons, Axios, React Router 7
-- **AI/Async**: Groq API (LLaMA-3.3-70b-versatile), Celery 5.4, Redis
+- **AI/Async**: Groq API (LLaMA-3.3-70b-versatile), Celery 5.5, Redis
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.12+ (Recommended 3.14+)
 - Node.js 18+
 - Redis (For Celery background tasks)
 - Groq API Key
