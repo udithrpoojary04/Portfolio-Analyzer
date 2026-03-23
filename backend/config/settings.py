@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'github_analyzer',
     'ai_engine',
     'reports',
+    'admin_dashboard',
 ]
 
 AUTHENTICATION_BACKENDS = [
@@ -169,6 +170,7 @@ SIMPLE_JWT = {
 # CORS Configuration
 CORS_ALLOWED_ORIGINS = [
     config('FRONTEND_URL', default='http://localhost:5173'),
+    'http://localhost:5174',
 ]
 
 # Celery Configuration

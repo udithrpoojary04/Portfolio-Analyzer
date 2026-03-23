@@ -8,4 +8,5 @@ urlpatterns = [
     path('api/github/', include('github_analyzer.urls')),
     path('api/ai/', include('ai_engine.urls')),
     path('api/reports/', include('reports.urls')),
+    path('api/admin/', include('admin_dashboard.urls')),
 ]
